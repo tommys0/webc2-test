@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     background-color: #F3F4F8;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #app {
@@ -19,26 +22,39 @@ h1 {
     list-style-type: none;
 }
 
+.task-not-done {
+    text-decoration: line-through;
+    background-color: #FF9C9C;
+    border: 1px solid #900000;
+}
+
+.task-done {
+    background-color: #9CFF8C;
+    border: 1px solid #149000;
+}
+
 .task {
     width: 500px;
     margin-right: auto;
     margin-left: auto;
     height: 100px;
-    background-color: #9CFF8C;
-    border: 1px solid #149000;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 6px 6px 18px -6px rgba(0,0,0,0.75);
 }
 
 .task-title {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
     font-size: 20px;
+    width: 450px;
 }
 
 .task-text {
     margin-top: 10px;
-    margin-left: 10px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }

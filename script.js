@@ -29,18 +29,27 @@ const todos = [
 const taskList = document.querySelector('.task-list');
 
 function renderTasks() {
-    for (let i = 0; i < todos.length; i++) {        const task = todos[i];
-               const newTask = document.createElement('li');
-    newTask.classList.add('task');
-    newTask.innerHTML = `
+    for (let i = 0; i < todos.length; i++) {
+        const task = todos[i];
+        const newTask = document.createElement('li');
+        newTask.classList.add('task');
+        newTask.innerHTML = `
             <div class="task-title">${task.title}</div>
             <div class="task-text">${task.text}</div>
         `;
-    taskList.appendChild(newTask);
-        if (newTask.done) {
+
+        // newTask.title.style.martginTop = '10px';
+        // newTask.title.style.marginLeft = '10px';
+        // newTask.title.style.fontWeight = 'bold';
+        // newTask.title.style.fontSize = '20px';
+
+        if (task.done === false) {
+            newTask.classList.add('task-not-done');
+        } else {
             newTask.classList.add('task-done');
         }
+        taskList.appendChild(newTask);
+
     }
 }
-
 renderTasks();
