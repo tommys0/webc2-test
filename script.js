@@ -38,10 +38,12 @@ function renderTasks() {
             <div class="task-text">${task.text}</div>
         `;
 
-        // newTask.title.style.martginTop = '10px';
-        // newTask.title.style.marginLeft = '10px';
-        // newTask.title.style.fontWeight = 'bold';
-        // newTask.title.style.fontSize = '20px';
+        const taskTitleElement = newTask.querySelector('.task-title');
+
+        taskTitleElement.style.marginTop = '10px';
+        taskTitleElement.style.marginLeft = '10px';
+        taskTitleElement.style.fontWeight = 'bold';
+        taskTitleElement.style.fontSize = '20px';
 
         if (task.done === false) {
             newTask.classList.add('task-not-done');
