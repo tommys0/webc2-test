@@ -24,5 +24,23 @@ const todos = [
         text: 'Udělat 3D prototyp na S4T + schůze s Patrikem',
         done: false,
     },
-]
+];
 
+const taskList = document.querySelector('.task-list');
+
+function renderTasks() {
+    for (let i = 0; i < todos.length; i++) {        const task = todos[i];
+               const newTask = document.createElement('li');
+    newTask.classList.add('task');
+    newTask.innerHTML = `
+            <div class="task-title">${task.title}</div>
+            <div class="task-text">${task.text}</div>
+        `;
+    taskList.appendChild(newTask);
+        if (newTask.done) {
+            newTask.classList.add('task-done');
+        }
+    }
+}
+
+renderTasks();
