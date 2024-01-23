@@ -1,0 +1,16 @@
+body {
+    background-color: #F3F4F8;
+    margin: 0;
+}
+
+#app {
+    width: 500px;
+    height: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
