@@ -55,3 +55,23 @@ function renderTasks() {
     }
 }
 renderTasks();
+
+function prvniUncompletedTask() {
+    for (let i = 0; i < todos.length; i++) {
+        if (!todos[i].done) {
+            return todos[i];
+        }
+    }
+    return null;
+}
+
+console.log(prvniUncompletedTask());
+
+function vsechnyJmena() {
+    const titles = [];
+    for (let i = 0; i < todos.length; i++) {
+        titles.push(todos[i].title);
+    }
+    return titles;
+}
+console.log(vsechnyJmena());
