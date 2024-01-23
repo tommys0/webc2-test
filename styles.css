@@ -14,3 +14,31 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
+.task-list {
+    list-style-type: none;
+}
+
+.task {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    background-color: #9CFF8C;
+    border: 1px solid #149000;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 18px -6px rgba(0,0,0,0.75);
+}
+
+.task-title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.task-text {
+    margin-top: 10px;
+    margin-left: 10px;
+}
